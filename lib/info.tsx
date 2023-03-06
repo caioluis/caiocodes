@@ -18,8 +18,7 @@ export const bio = () => {
         <>
             I'm still populating this website. In the meantime, you can check my{" "}
             <a
-                href="
-                linkedin.com/in/caioluis
+                href="https://linkedin.com/in/caioluis
                 "
                 target="_blank"
                 rel="noopener noreferrer"
