@@ -20,19 +20,19 @@ const navItems = {
     },
     "/blog/manifesto": {
         name: "manifesto",
-        x: 182,
+        x: 129,
         y: 69,
-        w: "100px",
+        w: "95px",
     },
     "/blog": {
         name: "blog",
-        x: 127,
+        x: 225,
         y: 104,
         w: "56px",
     },
     "/uses": {
         name: "uses",
-        x: 237,
+        x: 277,
         y: 139,
         w: "56px",
     },
