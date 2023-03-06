@@ -6,9 +6,30 @@ import Sidebar from "../components/sidebar";
 import AnalyticsWrapper from "../components/analytics";
 
 const kaisei = localFont({
-    src: "../public/fonts/kaisei-tokumin-latin-700-normal.woff2",
-    weight: "700",
+    src: "../public/fonts/kaisei-tokumin-latin-400-normal.woff2",
+    weight: "400",
     variable: "--font-kaisei",
+    display: "swap",
+});
+
+const universBold = localFont({
+    src: "../public/fonts/Univers-Bold-Condensed.ttf",
+    weight: "700",
+    variable: "--font-univers-bold",
+    display: "swap",
+});
+
+const universLight = localFont({
+    src: "../public/fonts/Univers-Light.ttf",
+    weight: "300",
+    variable: "--font-univers-light",
+    display: "swap",
+});
+
+const universCondensed = localFont({
+    src: "../public/fonts/Univers-Condensed.otf",
+    weight: "400",
+    variable: "--font-univers",
     display: "swap",
 });
 
@@ -63,7 +84,10 @@ export default function RootLayout({
             lang="en"
             className={clsx(
                 "text-black bg-white dark:text-white dark:bg-[#111010]",
-                kaisei.variable
+                kaisei.variable,
+                universBold.variable,
+                universLight.variable,
+                universCondensed.variable
             )}
         >
             <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto">
