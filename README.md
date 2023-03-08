@@ -24,3 +24,4 @@ I will incorporte other people's PRs on his repo, and you may as well fork this 
 - [ ] Fix some visual glitches
 - [ ] Finish the about me page, adding my work experience there
 - [ ] Implement * new blog post notification * feature. (thanks for the suggestion, marisa)
+- [ ] Localization feature to post in multiple languages.
