@@ -25,5 +25,3 @@ I will incorporte other people's PRs on his repo, and you may as well fork this 
 - [ ] Finish the about me page, adding my work experience there
 - [ ] Implement * new blog post notification * feature. (thanks for the suggestion, marisa)
 - [ ] Localization feature to post in multiple languages.
-
-Easter egg: testing the "ignore build step" command with exclude for readme
