@@ -1,24 +1,23 @@
 import type { Metadata } from "next";
 import { GitHubIcon, YoutubeIcon, ArrowIcon } from "components/icons";
+import { getLocale } from "lib/getLocale";
 
 export const metadata: Metadata = {
     title: "About",
-    description: "Software Engineer",
+    description: "A short introduction about me.",
 };
 
-export default function AboutPage() {
+export default async function AboutPage({ params: { lang } }) {
+    const t = await getLocale(lang);
     return (
         <section>
-            <h1 className="font-bold text-3xl font-serif">About Me</h1>
+            <h1 className="font-bold text-3xl font-serif">{t.about.header}</h1>
             <p className="my-5 text-neutral-800 dark:text-neutral-200">
-                Hey, I'm Caio. People on the internet might call me Caio Codes.
+                {t.about.whoAmI}
             </p>
             <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200">
-                <p>I'm still writing down this section.</p>
-                <p>
-                    This website is a fork from Lee's website, but it is/will be
-                    adapted and transformed to my own needs.
-                </p>
+                <p>{t.about.maintainance}</p>
+                <p>{t.about.disclaimer}</p>
                 <div className="flex flex-col gap-2 md:flex-row md:gap-2">
                     <a
                         rel="noopener noreferrer"
