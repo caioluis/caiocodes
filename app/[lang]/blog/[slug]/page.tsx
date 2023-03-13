@@ -8,13 +8,16 @@ import { Mdx } from "components/mdx";
 export async function generateStaticParams() {
     return allBlogs.map((post) => ({
         slug: post.slug,
+        lang: post.lang || "en",
     }));
 }
 
 export async function generateMetadata({
-    params,
+    params: { slug: paramSlug, lang },
 }): Promise<Metadata | undefined> {
-    const post = allBlogs.find((post) => post.slug === params.slug);
+    const post = allBlogs.find(
+        (post) => post.slug === paramSlug && post.lang === lang
+    );
     if (!post) {
         return;
     }
@@ -48,8 +51,10 @@ export async function generateMetadata({
     };
 }
 
-export default async function Blog({ params }) {
-    const post = allBlogs.find((post) => post.slug === params.slug);
+export default async function Blog({ params: { slug, lang } }) {
+    const post = allBlogs.find(
+        (post) => post.slug === slug && post.lang === lang
+    );
 
     if (!post) {
         notFound();

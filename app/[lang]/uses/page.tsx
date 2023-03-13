@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
 
+import { getLocale } from "lib/getLocale";
+
 export const metadata: Metadata = {
     title: "Uses",
     description:
         "Here's what tech I'm currently using for coding, videos, and music.",
 };
 
-export default function UsesPage() {
+export default async function UsesPage({ params: { lang } }) {
+    const t = await getLocale(lang);
     return (
         <section>
             <h1 className="font-bold text-3xl font-serif mb-8">Uses</h1>
             <p className="text-neutral-700 dark:text-neutral-300 mt-2 mb-8">
-                Here's what tech I'm currently using for coding, videos, and
-                music.
+                {t.uses}
             </p>
             <div className="prose prose-neutral dark:prose-invert">
                 <h3 id="computer-office">Computer / Office</h3>

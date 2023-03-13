@@ -2,32 +2,32 @@ import "./global.css";
 import clsx from "clsx";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Sidebar from "../components/sidebar";
-import AnalyticsWrapper from "../components/analytics";
+import Sidebar from "../../components/sidebar";
+import AnalyticsWrapper from "../../components/analytics";
 
 const kaisei = localFont({
-    src: "../public/fonts/kaisei-tokumin-latin-400-normal.woff2",
+    src: "../../public/fonts/kaisei-tokumin-latin-400-normal.woff2",
     weight: "400",
     variable: "--font-kaisei",
     display: "swap",
 });
 
 const universBold = localFont({
-    src: "../public/fonts/Univers-Bold-Condensed.ttf",
+    src: "../../public/fonts/Univers-Bold-Condensed.ttf",
     weight: "700",
     variable: "--font-univers-bold",
     display: "swap",
 });
 
 const universLight = localFont({
-    src: "../public/fonts/Univers-Light.ttf",
+    src: "../../public/fonts/Univers-Light.ttf",
     weight: "300",
     variable: "--font-univers-light",
     display: "swap",
 });
 
 const universCondensed = localFont({
-    src: "../public/fonts/Univers-Condensed.otf",
+    src: "../../public/fonts/Univers-Condensed.otf",
     weight: "400",
     variable: "--font-univers",
     display: "swap",

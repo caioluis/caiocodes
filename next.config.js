@@ -3,6 +3,10 @@ const { withContentlayer } = require("next-contentlayer");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    i18n: {
+        locales: ["en", "pt"],
+        defaultLocale: "en",
+    },
     images: {
         formats: ["image/avif", "image/webp"],
     },
@@ -24,6 +28,7 @@ const nextConfig = {
             },
         ];
     },
+    reactStrictMode: true,
 };
 
 // https://nextjs.org/docs/advanced-features/security-headers

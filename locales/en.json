@@ -1,0 +1,16 @@
+{
+    "home": {
+        "shortIntro": "Hey, I'm Caio. I'm a Sofware Engineer, previously at {{companies}}. Currently envolved in open-source projects and open to new opportunities.",
+        "shortOutro": "I'm still populating this website. In the meantime, you can check my {{linkedin}} profile."
+    },
+    "about": {
+        "header": "About Me",
+        "whoAmI": "Hey, I'm Caio. People on the internet might call me Caio Codes.",
+        "maintainance": "I'm still writing down this section.",
+        "disclaimer": "This website is a fork from Lee's website, but it is/will be adapted and transformed to my own needs."
+    },
+    "views": "blog views all time",
+    "stars": "stars on the blog repo",
+    "uses": "Here's what tech I'm currently using for coding, videos, and music.",
+    "notFound": "Page not found"
+}

@@ -44,6 +44,9 @@ export const Blog = defineDocumentType(() => ({
             type: "string",
             required: true,
         },
+        lang: {
+            type: "string",
+        },
         summary: {
             type: "string",
             required: true,
