@@ -1,0 +1,29 @@
+---
+title: 'Building a blog - Localization: why?'
+publishedAt: '2023-03-21'
+summary: "The first step of improvements in my blog. Why do we need localization?"
+---
+
+Recently I shared this blog with you and I began to work on it for some time; Then, I completely left it alone as I had other priorities. But shall we not forget about this blog, ok? I will continue to work on it.
+
+As we speak about it, - for those who are curious enough for how this thing works behind the scenes - I shared a to-do list in the GitHub repo that hosts this website's source code. As of the date that I write this post, it it as follows:
+
+![image of the to-do list](https://i.imgur.com/xnD9mXb.png)
+
+There are many edges to be sharpened in this website, especially the first one that I started to work on: localization.
+
+One of the main things that I want to give back to our society is accessibility. And, despite being the language that we, Software Engineers, most use during our whole careers, it may not be our mother tongue at all.
+
+For many people, it's hard to learn a new language. Not because they lack the capacity to do so, but because in fact they lack the resources (money, time, will, etc.) to do so. I was fortunate enough to have learned a lot from my dad, who before me had enrolled a English course to be employable on his field of expertise, and later on I was provided with a really good, private English course in group. However, the reality for many brazilians is far from my own material reality at that point.
+
+So, for accessibility, I think is vital to have some sort of localization in every application that we build. Today, I don't mind if some content is in English, as I clearly understand it (even though I make so many mistakes, due to my lack of training recently). But many people lose access to great content just because it is not in their mother tongue.
+
+The second point that made me want to implement localization in my blog is the idiomatic expressions that get lost in translation. I feel like I can bring different kinds of emotions to the reader depending on the language I speak. Currently, I only speak Portuguese, English and a little bit of French (sorry to my french co-workers, I expected that I would have learn more french to talk to all of you, but there are many things to learn at the moment). I also study German. In the future, I want to be able to write both in Portuguese, English, French and German for my blog. Some posts will only be written in a certain language, and that's ok too. But the posts that I want a broader audience to have access to will surely be localized properly.
+
+And, pardon my lack of technical jargon as I might be wrong about what I will say, but that's why I call it "localization" instead of "translation". It's something that happens quite often in the dubbing industry. You can translate a TV Show or a game, but if you don't localize, - or putting in other words, if you don't adapt the content to the reality of the listener -, it won't have the same impact.
+
+So that's my intention with localization. My posts in different languages won't be 1 to 1 translations, but they will rather have their own personality according to that language.
+
+This first part is only the "why". On the next few days, or weeks, idk, I'll be following up with a technical breakdown of "how".
+
+Thanks for reading!
