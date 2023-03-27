@@ -3,10 +3,12 @@ import Image from "next/image";
 import { getBlogViews, getStarCount } from "lib/metrics";
 import { GitHubIcon, ViewsIcon } from "components/icons";
 import { name, about, bio, avatar } from "lib/info";
+import { getLocale } from "lib/getLocale";
 
 export const revalidate = 60;
 
-export default async function HomePage() {
+export default async function HomePage({ params: { lang } }) {
+    const t = await getLocale(lang);
     let starCount = 0,
         views = 0;
 
@@ -23,7 +25,7 @@ export default async function HomePage() {
         <section>
             <h1 className="font-bold text-4xl font-universBold bold">{name}</h1>
             <p className="my-5 max-w-[460px] text-neutral-800 dark:text-neutral-200">
-                {about()}
+                {about(t)}
             </p>
             <div className="flex items-start md:items-center my-8 flex-col md:flex-row">
                 <Image
@@ -42,15 +44,15 @@ export default async function HomePage() {
                         className="flex items-center gap-2"
                     >
                         <GitHubIcon />
-                        {`${starCount.toLocaleString()} stars on this repo`}
+                        {`${starCount.toLocaleString()} ${t.stars}`}
                     </a>
                     <Link href="/blog" className="flex items-center">
                         <ViewsIcon />
-                        {`${views.toLocaleString()} blog views all time`}
+                        {`${views.toLocaleString()} ${t.views}`}
                     </Link>
                 </div>
             </div>
-            <p className="my-5 max-w-[460px]">{bio()}</p>
+            <p className="my-5 max-w-[460px]">{bio(t)}</p>
         </section>
     );
 }

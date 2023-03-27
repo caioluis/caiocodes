@@ -1,0 +1,16 @@
+{
+    "home": {
+        "shortIntro": "Opa, eu sou o Caio. Eu sou um Engenheiro de Software, trabalhei na {{companies}}. Atualmente, estou envolvido em projetos open-source e aberto a novas oportunidades.",
+        "shortOutro": "Eu ainda estou montando esse site. Enquanto isso, você pode checar meu {{linkedin}}."
+    },
+    "about": {
+        "header": "Sobre Mim",
+        "whoAmI": "Salve, eu sou o Caio. A galera da internet me chama de Caio Codes.",
+        "maintainance": "Eu ainda estou escrevendo essa seção.",
+        "disclaimer": "Este site é um fork do site do Lee, mas será/está sendo adaptado para as minhas necessidades."
+    },
+    "views": "visualizações no blog",
+    "stars": "estrelas no repositório do blog",
+    "uses": "Aqui estão as bugigangas que eu uso no meu dia a dia pra programar, fazer música e vídeos.",
+    "notFound": "Essa página não existe."
+}
