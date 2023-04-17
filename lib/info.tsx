@@ -16,13 +16,15 @@ export const about = () => {
 export const bio = () => {
     return (
         <>
-            I'm still populating this website. In the meantime, you can check my{" "}
+            If you want to know more about my previous experience, check the{" "}
+            <strong>About</strong> section. Do you want to talk about
+            interesting opportunities? Reach me out on my{" "}
             <a
                 href="https://linkedin.com/in/caioluis
                 "
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-bold hover:underline"
+                className="font-bold"
             >
                 LinkedIn
             </a>{" "}

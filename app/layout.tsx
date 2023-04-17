@@ -33,6 +33,34 @@ const universCondensed = localFont({
     display: "swap",
 });
 
+const publicSans = localFont({
+    src: [
+        {
+            path: "../public/fonts/PublicSans-Regular.ttf",
+            weight: "400",
+        },
+        {
+            path: "../public/fonts/PublicSans-Light.ttf",
+            weight: "300",
+        },
+    ],
+    variable: "--font-public-sans",
+});
+
+const apercuMonoPro = localFont({
+    src: [
+        {
+            path: "../public/fonts/ApercuMonoProBold.ttf",
+            weight: "700",
+        },
+        {
+            path: "../public/fonts/ApercuMonoProLight.ttf",
+            weight: "300",
+        },
+    ],
+    variable: "--font-apercu-mono-pro",
+});
+
 export const metadata: Metadata = {
     title: {
         default: "Caio Gomes",
@@ -87,7 +115,9 @@ export default function RootLayout({
                 kaisei.variable,
                 universBold.variable,
                 universLight.variable,
-                universCondensed.variable
+                universCondensed.variable,
+                publicSans.variable,
+                apercuMonoPro.variable
             )}
         >
             <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto overflow-y-scroll">
