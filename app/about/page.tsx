@@ -8,6 +8,7 @@ import {
     EyeIcon,
 } from "components/icons";
 import PasswordChanger from "components/PasswordChanger";
+import { PasswordChangerInfo } from "./components/PasswordChangerInfo";
 
 export const metadata: Metadata = {
     title: "About",
@@ -79,34 +80,34 @@ export default function AboutPage() {
                     Apart from my freelance work, I have worked for three great
                     french companies.
                 </p>
-                <h3 className="font-bold text-2xl font-serif">Dashlane</h3>
-                <p>
-                    Dashlane is one of the best password managers in the market.
-                    Fun fact: even before being an employee, I was a user too.
-                </p>
-                <p>
-                    During my time there, I worked on two features:{" "}
-                    <strong>Password Changer</strong> and the{" "}
-                    <strong>Password Health</strong>. This doesn't mean anything
-                    to you? No worries, I can explain visually.
-                </p>
-                <ul>
-                    <li className="font-bold text-xl font-serif">
-                        Password Changer
-                    </li>
+                <div>
+                    <h3 className="font-bold text-2xl font-serif">Dashlane</h3>
                     <p>
-                        This feature allows users to change their passwords in
-                        just a click. It was a really great way to react to
-                        breaches. Users could change their passwords in bulk in
-                        a matter of seconds. Try it out yourself! (just a dummy,
-                        tho)
+                        Dashlane is one of the best password managers in the
+                        market. Fun fact: even before being an employee, I was a
+                        user too.
                     </p>
                     <p>
-                        Check the password that as randomly assigned to you,
-                        then hit the Password Changer to see the Magic!
+                        During my time there, I worked on two features:{" "}
+                        <strong>Password Changer</strong> and the{" "}
+                        <strong>Password Health</strong>. This doesn't mean
+                        anything to you? No worries, I can explain visually.
                     </p>
-                    <PasswordChanger />
-                </ul>
+                    <ul>
+                        <PasswordChangerInfo />
+                        <li className="font-bold text-xl font-serif">
+                            Password Health
+                        </li>
+                        <p>
+                            After the death of Password Changer, I joined the
+                            "Protect the User" (PTU) team, which was later
+                            transformed into "Improved my Security"ß (IMS). It
+                            can seem a very simple-to-implement feature, but I
+                            guarantee that it was not. To this day, I'm not that
+                            knowledgeable about the Password Health codebase.
+                        </p>
+                    </ul>
+                </div>
             </div>
         </section>
     );

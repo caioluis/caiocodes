@@ -169,6 +169,7 @@ export function ChangePasswordIcon() {
             viewBox="0 0 20 20"
             version="1.1"
             className="w-8 h-8 p-1"
+            fill="currentColor"
         >
             <path d="M6.50009 9.23919H9.50009V10.741H6.50009V9.23919Z"></path>
             <path d="M10.5001 9.23919H13.5001V10.741H10.5001V9.23919Z"></path>
