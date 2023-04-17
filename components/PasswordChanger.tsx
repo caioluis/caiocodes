@@ -239,7 +239,7 @@ export default function PasswordChanger() {
                 )}
             </AnimatePresence>
             <button
-                className="bg-neutral-200 w-fit py-1 px-2 rounded"
+                className="bg-neutral-200 w-fit py-1 px-2 rounded hover:brightness-90"
                 onClick={triggerPasswordChanger}
             >
                 <span className="flex font-publicSans font-bold text-[#212d37] items-center">
