@@ -11,6 +11,8 @@ module.exports = {
                 serif: ["var(--font-kaisei)"],
                 universBold: ["var(--font-univers-bold)"],
                 sans: ["var(--font-univers-light)"],
+                publicSans: ["var(--font-public-sans)"],
+                apercuMonoPro: ["var(--font-apercu-mono-pro)"],
             },
             typography: {
                 quoteless: {
