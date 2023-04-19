@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
 import {
-    GitHubIcon,
     YoutubeIcon,
     ArrowIcon,
     TwitchIcon,
     DattebayoIcon,
-    EyeIcon,
 } from "components/icons";
-import PasswordChanger from "components/PasswordChanger";
+
 import { PasswordChangerInfo } from "./components/PasswordChangerInfo";
 
 export const metadata: Metadata = {
@@ -104,9 +102,35 @@ export default function AboutPage() {
                             transformed into "Improved my Security"ß (IMS). It
                             can seem a very simple-to-implement feature, but I
                             guarantee that it was not. To this day, I'm not that
-                            knowledgeable about the Password Health codebase.
+                            knowledgeable about the Password Health codebase,
+                            but I have spent a long time working on it alongside
+                            my peers.
                         </p>
+                        <figure>
+                            <img src="/images/password-health.jpeg" />
+                            <figcaption>
+                                Made by our lovely{" "}
+                                <a href="https://mastodon.social/@louisgrasset">
+                                    @louisgrasset
+                                </a>
+                            </figcaption>
+                        </figure>
                     </ul>
+                </div>
+
+                <div>
+                    <h3 className="font-bold text-2xl font-serif">Qonto</h3>
+                    <p>
+                        Qonto is a fintech startup based in Paris, designed for
+                        SMEs and freelancers.
+                    </p>
+                    <p>I'm still building this section...</p>
+                </div>
+
+                <div>
+                    <h3 className="font-bold text-2xl font-serif">Zefir</h3>
+                    <p>Zefir is a real-estate startup based in Paris.</p>
+                    <p>I'm still building this section...</p>
                 </div>
             </div>
         </section>
