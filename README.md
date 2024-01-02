@@ -1,3 +1,7 @@
+# OLD REPO
+### This is not the repo currently used in my blog
+
+
 ## Welcome to my website and blog
 
 Even though I don't think having a website and blog is necessary to be a software engineer, people always ask me if I do have one. I find it ridiculous to build one just to satisfy some people. But I do want, in fact, to write down on my own blog and have my own space on the internet. So after much pressure and procrastination, here it is.
